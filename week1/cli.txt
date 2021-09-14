@@ -2,7 +2,9 @@ CLI challenge:
 
 1. 
 - Create hidden file in linux:			touch .<filename>
+- Create hidden folder in linux:		mkdir .<foldername>
 - Create hidden file in windows using bash:	touch .<filename> && attrib +h .<filename>
+- Create hidden folder in windows using bash:	mkdir .<foldername> && attrib +h .<foldername>
 				
 - Display hidden files:				ls -a
 
