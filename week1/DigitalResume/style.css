@@ -1,0 +1,204 @@
+:root {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(38, 38, 38);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  background: linear-gradient(to right bottom, #0d0325, #010118);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h5 {
+  font-weight: bolder;
+}
+h5,
+span {
+  color: rgb(90, 90, 90);
+}
+a {
+  text-decoration: none;
+  color: rgb(38, 38, 38);
+}
+a:hover {
+  text-decoration: underline;
+}
+.resume {
+  height: 1000px;
+  width: 768px;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+.personal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 2rem  0 0 2rem;
+  padding: 20px;
+  margin: 10px;
+  border-right: 5px solid black;
+}
+
+.user img {
+  max-width: 50%;
+  border-radius: 1rem;
+  margin-bottom: 40px;
+  margin-left: 25%;
+}
+.user h2 {
+  margin-bottom: 10px;  
+}
+.contact table th {
+  text-align: left;
+  font-weight: 500;
+  padding: 5px 20px 5px 0;  
+}
+
+.hide {
+  display: none;
+}
+.profile h1 {
+  margin-bottom: 10px;
+}
+.line {
+  border-bottom: 5px solid rgb(73, 73, 73);
+}
+.profile .line {
+  width: 100px;
+}
+.profile p {
+  text-align: justify;
+  margin-top: 30px;
+  text-indent: 30px;
+  padding-right: 15px;
+}
+.info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: auto 1%;
+}
+.box h1 {
+  padding: 10px 0;
+}
+.box h3 {
+  padding: 30px 0 10px;
+}
+.box p {
+  padding: 10px 0 10px 20px;
+}
+.box span {
+  float: right;
+  font-size: 0.8rem;
+  font-weight: 700;  
+}
+.box ul {
+  padding-left: 30px;
+  margin: 10px 0;
+}
+.box ul li {
+  padding: 10px 0;
+}
+.box1 .line {
+  width: 170px;
+}
+.box2 .line {
+  width: 140px;
+}
+.box2 p {
+  padding-top: 0;
+}
+.box3 .line {
+  width: 120px;
+}
+.box3 p {
+  padding-top: 20px;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+  .resume {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+  .personal {
+    width: 90%;
+    border-radius: 2rem;
+    border-right: none;
+    margin: 5% auto;
+  }
+  .info {
+    width: 90%;
+    max-width: 500px;
+    margin: 5% auto;
+  }
+  .user {
+    text-align: center;
+  }
+  .user img {
+    max-width: 150px;
+    border-radius: 1rem;
+    margin: 40px auto 20px;
+  }
+  .user h2 {
+    margin-bottom: 0;  
+  }
+  .contact table {
+    width: 100%;
+    max-width: 300px;
+    margin: 30px auto;  
+  }
+  .contact table th {
+    text-align: left;
+    font-weight: 500;
+  }
+  .contact table td {
+    text-align: right;
+  }
+  .profile {
+    max-width: 450px;
+    align-self: center;
+  }
+  .profile p {
+    margin-top: 20px;
+    text-indent: 30px;
+    padding: 15px;
+  }
+  .hide {
+    display: block;
+  }
+  .box span {
+    float: none;
+    padding-left: 15px;
+  }
+  .box h3 {
+    line-height: 1rem;
+  }
+}

@@ -1,0 +1,15 @@
+CLI challenge:
+
+1. 
+- Create hidden file in linux:			touch .<filename>
+- Create hidden file in windows using bash:	touch .<filename> && attrib +h .<filename>
+				
+- Display hidden files:				ls -a
+
+2.
+- Create multiple nested directories:
+mkdir -p /c/Users/myusername/these/folders/are/just/for/fun
+
+3. 
+- Append a message to a file, without a newline character:
+echo -n "second message" >> <fileName>
