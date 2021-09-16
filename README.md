@@ -1,5 +1,5 @@
-The module's homeworks
+# The module's homeworks
 
 Here you can find my homeworks hosted on Github:
 
-https://alexandersaid.github.io/week1/DigitalResume/
+- [Week 1 : Digital Resume Sample](https://alexandersaid.github.io/week1/DigitalResume/)
