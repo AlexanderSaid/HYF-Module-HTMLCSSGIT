@@ -20,18 +20,6 @@
   --dart: rgb(3, 8, 85);
   --light: rgba(220, 245, 255, 0.5);
 }
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background-color: var(--light);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--main);
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--hover);
-}
 * {
   margin: 0;
   padding: 0;
@@ -126,7 +114,7 @@ p {
   }
   .grid-floats .grid-item {
     float: left;
-    height: 70vh;
+    height: 630px;
     overflow: auto;
   }
   .grid-item p {
@@ -166,22 +154,3 @@ p {
     max-width: 50%;
   }
 }
-/* Extra */
-/* @media (min-width: 1920px) {
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.7rem;
-    height: 6rem;
-  }
-  .grid-floats .grid-item {
-    height: 90vh;
-  }
-  .grid-item p {
-    font-size: 1.5rem;
-  }
-} */
