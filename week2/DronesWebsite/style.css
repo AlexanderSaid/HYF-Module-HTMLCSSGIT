@@ -20,6 +20,18 @@
   --dart: rgb(3, 8, 85);
   --light: rgba(220, 245, 255, 0.5);
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--light);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover);
+}
 * {
   margin: 0;
   padding: 0;
