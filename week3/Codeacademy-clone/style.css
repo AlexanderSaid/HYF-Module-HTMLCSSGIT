@@ -46,15 +46,18 @@ body {
   color: #10162f;
 }
 header {
-  padding: 0.5rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: sticky;
   top: 0;
   transition: background-color 150ms ease-in-out 0s,
     border-bottom-color 150ms ease-in-out 0s;
   z-index: 10;
+}
+.container {
+  padding: 0.5rem 2rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 header.scrolled {
   background: white;
@@ -101,6 +104,18 @@ a {
 footer {
   display: flex;
   flex-direction: column;
+}
+.container,
+.div1,
+.div3,
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.div2,
+.div4,
+.div5 {
+  max-width: 100%;
 }
 .div1 {
   padding: 1rem 2rem 0;
@@ -318,6 +333,8 @@ small a:hover {
   font-size: 1.375rem;
   font-weight: 700;
   padding-bottom: 0.5rem;
+  display: block;
+  width: 100%;
 }
 .get-inspired p {
   font-size: 1.125rem;
@@ -598,7 +615,10 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .get-inspired, .get-to {
+  .div3 h2 {
+    width: 100%;
+  }
+  .get-inspired p, .get-to {
     order: 1;
     max-width: 50%;
   }
@@ -607,7 +627,7 @@ footer {
   }
   .get-to {
     padding-right: 5rem;
-    vertical-align: middle;
+    padding-top: 8rem;
   }
   .div3 .get-to {
     order: 1;
@@ -715,6 +735,13 @@ footer {
     line-height: 1.5;
     max-width: 80%;
   }
+  .div4 {
+    padding: 6rem 4rem;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
   .text2 {
     font-size: 1.625rem;
   }
@@ -760,6 +787,14 @@ footer {
   }
 }
 @media screen and (min-width: 1200px) {
-
+  .catalog-box {
+    width: calc(24% - 1rem);
+  }
+  .box-info {
+    width: 80%;
+  }
+  .card {
+    width: calc(24% - 1rem);
+  }
 }
 
