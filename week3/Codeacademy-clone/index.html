@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codecademy Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="scrolled">
+      <nav>
+        <a href="index.html"
+          ><img src="img/codecademy.png" alt="Codecademy logo" class="logo"
+        /></a>
+      </nav>
+      <section class="side-menu">
+        <a href="#" class="login">Log in</a>
+        <a href="#" class="menu"><span class="material-icons"> menu </span></a>
+      </section>
+    </header>
+    <main>
+      <section class="div1">
+        <section class="join">
+          <picture class="hero">
+            <source media="(min-width: 768px)" srcset="img/main.png" />
+            <img src="img/main2.png" alt="Hero image" />
+          </picture>
+          <form class="sign-up" action="">
+            <h1>Join the millions learning to code with Codecademy for free</h1>
+            <div class="input-field">
+              <label for="">Email</label>
+              <input type="email" required />
+            </div>
+            <div class="input-field">
+              <label for=""
+                >Password<span class="material-icons info-icon">
+                  info
+                </span></label
+              >
+              <input type="password" required />
+            </div>
+            <div class="input-field">
+              <button class="btn btn1">Sign Up</button>
+            </div>
+            <small
+              >By signing up for Codecademy, you agree to Codecademy's
+              <a>Terms of Service</a> & <a>Privacy Policy</a>.</small
+            >
+            <h2>Or sign in using:</h2>
+            <div class="sign-up-methods">
+              <a href=""><img src="img/in.png" alt="" /></a>
+              <a href=""><img src="img/google.png" alt="" /></a>
+              <a href=""><img src="img/fb.png" alt="" /></a>
+              <a href=""><img src="img/git.png" alt="" /></a>
+            </div>
+          </form>
+        </section>
+        <section class="catalog">
+          <h2>Explore our catalog</h2>
+          <div class="catalog-boxes">
+            <a href="" class="catalog-box box1">
+              <div class="box-info">
+                <p class="explore">Explore all</p>
+                <p class="topic">Javascript</p>
+              </div>
+            </a>
+            <a href="" class="catalog-box box2">
+              <div class="box-info">
+                <p class="explore">Explore all</p>
+                <p class="topic">Python</p>
+              </div>
+            </a>
+            <a href="" class="catalog-box box3">
+              <div class="box-info">
+                <p class="explore">Explore all</p>
+                <p class="topic">Web Development</p>
+              </div>
+            </a>
+            <a href="" class="catalog-box box4">
+              <div class="box-info">
+                <p class="explore">Explore all</p>
+                <p class="topic">Data Science</p>
+              </div>
+            </a>
+            <a href="#" class="get-to">Browse Courses →</a>
+          </div>
+        </section>
+      </section>
+      <section class="div2">
+        <div class="guide">
+          <span class="line1">First steps</span>
+          <span class="line2">Not sure where to begin?</span>
+          <span class="line3"
+            >No need to worry, our quiz will help you make sense of it
+            all.</span
+          >
+          <a href="#" class="btn btn1">Take our quiz</a>
+        </div>
+        <img src="img/div2.svg" alt="" />
+      </section>
+      <section class="div3">
+        <div class="get-inspired">
+          <h2>Get inspired</h2>
+          <p>See stories from the Codecademy community.</p>
+        </div>
+        <div class="cards">
+          <div class="dots">
+            <svg aria-hidden="true" class="svg-box"><defs><pattern id="checkerRegular" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#10162f"></rect><rect x="4" y="4" width="1" height="1" fill="#10162f"></rect></pattern></defs><rect x="0" y="0" width="100%" height="100%" fill="url(#checkerRegular)"></rect></svg>
+          </div>
+          <a href="#" class="card">
+            <img src="img/GiacomoSorbi.jpeg" alt="">
+            <p class="story-title">
+              Taking a different path: One Team Lead's story</p>
+              <p class="learner">Giacomo S., Team Lead, London</p>
+          </a>
+          <a href="#" class="card">
+            <img src="img/AlisonVoghel.jpg" alt="">
+            <p class="story-title">
+              See how this Architect switched to UX Design</p>
+              <p class="learner">Alison V., Senior UX Designer @ Acquia, Columbus</p>
+          </a>
+          <a href="#" class="card">
+            <img src="img/ManuelSousa.jpg" alt="">
+            <p class="story-title">
+              Lessons from a Chef turned Deputy CTO</p>
+              <p class="learner">Manuel S., Deputy CTO @ PaxFamilia, Brussels</p>
+          </a>
+          <a href="#" class="card">
+            <img src="img/Rosita.jpg" alt="">
+            <p class="story-title">
+              How one Developer learned to code with her disability</p>
+              <p class="learner">Rosita R., Front-End Developer, Brummen, Netherlands</p>
+          </a>
+          <a href="#" class="get-to">Explore more stories →</a>
+        </div>
+      </section>
+      <section class="div4">
+        <div class="how">
+          <p class="text1">How it works</p>
+          <p class="text2">First, we invented the best system for learning to code.</p>
+          <p class="text2">Ten years and 50 million learners later, we've perfected it.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>Learn by doing</h3>
+            <p>From building websites to analyzing date, the choice is yours. No matter your experience level, you'll be writing real, working code in minutes.</p>
+          </div>
+          <div>
+            <svg aria-hidden="true" class="svg-box-norrow"><defs><pattern id="checkerDensepattern-0" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#66c4ff"></rect><rect x="2" y="2" width="1" height="1" fill="#66c4ff"></rect></pattern></defs><rect x="0" y="0" width="100%" height="100%" fill="url(#checkerDensepattern-0)"></rect></svg>
+          </div>
+          <div class="step">
+            <h3>Get instant feedback</h3>
+            <p>Your code is tested as soon as you submit it, so you always know if you're on the right track.</p>
+          </div>
+          <div>
+            <svg aria-hidden="true" class="svg-box-norrow"><defs><pattern id="checkerDensepattern-0" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#66c4ff"></rect><rect x="2" y="2" width="1" height="1" fill="#66c4ff"></rect></pattern></defs><rect x="0" y="0" width="100%" height="100%" fill="url(#checkerDensepattern-0)"></rect></svg>
+          </div>
+          <div class="step">
+            <h3>Put your learning into practice</h3>
+            <p>Apply your learning with real-world projects and learn everything you need to take your career to the next level.</p>
+          </div>
+        </div>
+      </section>
+      <section class="div5">
+        <img src="img/div5.svg" alt="" />
+        <div class="guide">
+          <span class="line2">It's time to start investing in yourself</span>
+          <span class="line3"
+            >Because learning to code might be the easiest way to change your career.</span
+          >
+          <a href="#" class="btn btn2">Get Started</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="half1">
+        <div class="links">
+          <h2>Company</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Shop</a></li>
+            <li>
+              <ul class="social">
+                <li><a href="#" class="fab fa-twitter"></a></li>
+                <li><a href="#" class="fab fa-facebook-f"></a></li>
+                <li><a href="#" class="fab fa-instagram"></a></li>
+                <li><a href="#" class="fab fa-youtube"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <h2>Resources</h2>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Cheatsheets</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Blog</a></li>
+        </div>
+        <div class="links">
+          <h2>Support</h2>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+        </div>
+        <div class="links">
+          <h2>Community</h2>
+          <ul>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Chapters</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Learner Stories</a></li>
+        </div>
+        <div class="links">
+          <h2>Individual Plans</h2>
+          <ul>
+            <li><a href="#">Pro Membership</a></li>
+            <li><a href="#">For Students</a></li>
+        </div>
+        <div class="links">
+          <h2>Enterprise Plans</h2>
+          <ul>
+            <li><a href="#">For Business</a></li>
+        </div>
+        <div class="mobile">
+          <h2>Mobile</h2>
+          <ul>
+            <li><a href="#"><img src="img/download-on-the-app-store.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/120px-Google_Play_Store_badge_EN.svg.png" alt=""></a></li>
+        </div>
+      </section>
+      <section class="half2">
+        <h2>Course Catalog</h2>
+        <div class="courses">
+          <h3>Languages</h3>
+          <ul>
+            <li><a href="#">HTML & CSS</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">R</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">C#</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">Go</a></li>
+            <li><a href="#">Bash/Shell</a></li>
+            <li><a href="#">Swift</a></li>
+            <li><a href="#">Ruby</a></li>
+            <li><a href="#">Kotlin</a></li>
+          </ul>
+        </div>
+        <div class="courses">
+          <h3>Subjects</h3>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">-</a></li>
+            <li><a href="#">Data Science</a></li>
+            <li><a href="#">Full Catalog</a></li>
+            <li><a href="#">Computer Science</a></li>
+            <li><a href="#">Beta Content</a></li>
+            <li><a href="#">Developer Tools</a></li>
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Machine Learning</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#">Code Foundations</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="bottom">
+        <div class="terms">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Do Not Sell My Personal Information</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+        <p>Made with ❤️ in NYC&copy;Codecademy</p>
+      </section>
+    </footer>
+    <script>
+      $(window).scroll(function () {
+        $("header").toggleClass("scrolled", $(this).scrollTop() > 50);
+      });
+    </script>
+  </body>
+</html>
