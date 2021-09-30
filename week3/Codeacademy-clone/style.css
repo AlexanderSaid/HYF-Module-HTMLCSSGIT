@@ -48,27 +48,30 @@ body {
 header {
   position: sticky;
   top: 0;
-  transition: background-color 150ms ease-in-out 0s,
-    border-bottom-color 150ms ease-in-out 0s;
   z-index: 10;
+  background-color: white;
+  border-bottom: 1px solid #10162f;
 }
-.container {
+/* .scrolled {
+  background-color: white;
+  border-bottom: 1px solid #10162f;
+} */
+.on-small-scr {
   padding: 0.5rem 2rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header.scrolled {
-  background: white;
-  border-bottom: 1px solid #10162f;
+.on-big-scr {
+  display: none;
 }
 a {
   text-decoration: none;
   color: #10162f;
   cursor: pointer;
 }
-.side-menu {
+.side-menu-small {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -79,9 +82,6 @@ a {
 .menu {
   margin-left: 1.5rem;
 }
-/* .menu span {
-  justify-content: flex-end;
-} */
 .login {
   font-size: 0.8rem;
   font-weight: 500;
@@ -105,7 +105,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.container,
+.on-small-scr,
 .hero-div,
 .stories,
 footer {
@@ -566,6 +566,10 @@ footer {
 }
 /* Responsive */
 @media screen and (min-width: 768px) {
+  
+  .on-small-scr {
+    padding: 1rem 4rem;
+  }
   .join {
     flex-direction: row;
     justify-content: center;
@@ -701,6 +705,42 @@ footer {
   }
 }
 @media screen and (min-width: 1024px) {
+  .on-small-scr {
+    display: none;
+  }
+  .on-big-scr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .on-big-scr nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .on-big-scr nav a {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem; 
+  }
+  .on-big-scr nav a:hover {
+    color:#3a10e5;
+  }
+  .side-menu-big {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .search span{
+    font-size: 2rem;
+    margin-right: 1.2rem;
+  }
+  .side-menu-big .login {
+    font-size: 1rem;
+  }
   .hero-div {
     padding: 1rem 4rem 0;
   }
