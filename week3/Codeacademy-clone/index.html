@@ -19,18 +19,42 @@
     />
   </head>
   <body>
-    <header class="scrolled">
-      <div class="container">
+    <header id="header">
+      <div class="on-small-scr">
         <nav>
           <a href="index.html"
             ><img src="img/codecademy.png" alt="Codecademy logo" class="logo"
           /></a>
         </nav>
-        <div class="side-menu">
+        <div class="side-menu-small">
           <a href="#" class="login">Log in</a>
           <a href="#" class="menu"
             ><span class="material-icons"> menu </span></a
           >
+        </div>
+      </div>
+      <div class="on-big-scr">
+        <nav>
+          <a href="index.html"
+            ><img src="img/codecademy.png" alt="Codecademy logo" class="logo"
+          /></a>
+          <a href="#">Catalog</a>
+          <a href="#" class="drop-down"
+            >Resources<span class="material-icons">arrow_drop_down</span></a
+          >
+          <a href="#" class="drop-down"
+            >Community<span class="material-icons">arrow_drop_down</span></a
+          >
+          <a href="#" class="drop-down"
+            >Pro Pricing<span class="material-icons">arrow_drop_down</span></a
+          >
+          <a href="#">For Business</a>
+        </nav>
+        <div class="side-menu-big">
+          <a href="#" class="search"
+            ><span class="material-icons"> search </span></a
+          >
+          <a href="#" class="login">Log in</a>
         </div>
       </div>
     </header>
@@ -395,10 +419,16 @@
         <p>Made with ❤️ in NYC&copy;Codecademy</p>
       </div>
     </footer>
-    <script>
-      $(window).scroll(function () {
-        $("header").toggleClass("scrolled", $(this).scrollTop() > 50);
+    <!-- <script>
+      $(document).ready(function () {
+        $(window).on('scroll', function(){
+          if ($(window).scrollTop() > 50) {
+            $('#header').addClass('scrolled');
+          } else {
+            $('#header').removeClass('scrolled');
+          }
+        })
       });
-    </script>
+    </script> -->
   </body>
 </html>
