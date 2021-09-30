@@ -88,17 +88,17 @@ a {
   padding: 0 0.5rem;
   color: #3a10e5;
 }
-.div1,
+.hero-div,
 .join,
 .sign-up,
 .input-field,
 .catalog,
 .catalog-boxes,
 .catalog-box,
-.div3,
+.stories,
 .cards,
 .card,
-.div4,
+.guide-div,
 .how,
 .steps,
 footer {
@@ -106,18 +106,18 @@ footer {
   flex-direction: column;
 }
 .container,
-.div1,
-.div3,
+.hero-div,
+.stories,
 footer {
   max-width: 1440px;
   margin: 0 auto;
 }
-.div2,
-.div4,
-.div5 {
+.quiz-div,
+.guide-div,
+.get-start {
   max-width: 100%;
 }
-.div1 {
+.hero-div {
   padding: 1rem 2rem 0;
 }
 .join,
@@ -287,7 +287,7 @@ small a:hover {
 }
 /* Div 2 */
 
-.div2 {
+.quiz-div {
   display: flex;
   justify-content: center;
   background-color: #ffd300;
@@ -316,7 +316,7 @@ small a:hover {
   padding: 0.5rem 1rem;
   text-align: center;
 }
-.div2 img {
+.quiz-div img {
   max-width: 13.75rem;
   margin-left: 12%;
 }
@@ -386,7 +386,7 @@ small a:hover {
 
 /* Div 4 */
 
-.div4 {
+.guide-div {
   padding: 3rem 4rem;
   background-color: #10162f;
   color: #fff0e5;
@@ -428,7 +428,7 @@ small a:hover {
   margin: 2rem 0 1rem;
 }
 
-.div5 {
+.get-start {
   display: flex;
   justify-content: center;
   background-color: #3a10e5;
@@ -436,7 +436,7 @@ small a:hover {
   align-items: center;
   color: white;
 }
-.div5 img {
+.get-start img {
   margin-right: 12%;
   max-width: 13.75rem;
 }
@@ -610,12 +610,12 @@ footer {
     margin: 0;
     padding-top: 0;
   }
-  .div3 {
+  .stories {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .div3 h2 {
+  .stories h2 {
     width: 100%;
   }
   .get-inspired p, .get-to {
@@ -629,7 +629,7 @@ footer {
     padding-right: 5rem;
     padding-top: 8rem;
   }
-  .div3 .get-to {
+  .stories .get-to {
     order: 1;
 
   }
@@ -701,7 +701,7 @@ footer {
   }
 }
 @media screen and (min-width: 1024px) {
-  .div1 {
+  .hero-div {
     padding: 1rem 4rem 0;
   }
   .join {
@@ -722,20 +722,20 @@ footer {
   .input-field {
     max-width: 90%;
   }
-  .div2, .div5 {
+  .quiz-div, .get-start {
     padding: 6rem 0;
   }
   .guide {
     max-width: 282px;
   }
-  .div2 img, .div5 img {
+  .quiz-div img, .get-start img {
     max-width: 22.25rem;
   }
   .line3 {
     line-height: 1.5;
     max-width: 80%;
   }
-  .div4 {
+  .guide-div {
     padding: 6rem 4rem;
     flex-direction: row;
     text-align: left;
@@ -758,6 +758,9 @@ footer {
     margin-top: 0;
     padding-left: 2rem;
     border-left: 1px solid #10162f;
+  }
+  .half2 h2 {
+    padding-top: 0;
   }
   .languages {
     float: right;

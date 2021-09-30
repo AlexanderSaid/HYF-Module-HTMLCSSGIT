@@ -10,45 +10,55 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="scrolled">
       <div class="container">
-      <nav>
-        <a href="index.html"
-          ><img src="img/codecademy.png" alt="Codecademy logo" class="logo"
-        /></a>
-      </nav>
-      <section class="side-menu">
-        <a href="#" class="login">Log in</a>
-        <a href="#" class="menu"><span class="material-icons"> menu </span></a>
-      </section>
-    </div>
+        <nav>
+          <a href="index.html"
+            ><img src="img/codecademy.png" alt="Codecademy logo" class="logo"
+          /></a>
+        </nav>
+        <div class="side-menu">
+          <a href="#" class="login">Log in</a>
+          <a href="#" class="menu"
+            ><span class="material-icons"> menu </span></a
+          >
+        </div>
+      </div>
     </header>
     <main>
-      <section class="div1">
+      <div class="hero-div">
         <section class="join">
           <picture class="hero">
             <source media="(min-width: 768px)" srcset="img/main.png" />
             <img src="img/main2.png" alt="Hero image" />
           </picture>
-          <form class="sign-up" action="">
+          <form class="sign-up" action="/action_page.php">
             <h1>Join the millions learning to code with Codecademy for free</h1>
             <div class="input-field">
-              <label for="">Email</label>
-              <input type="email" required />
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
             </div>
             <div class="input-field">
-              <label for=""
-                >Password<span class="material-icons info-icon">
-                  info
-                </span></label
+              <label for="password"
+                >Password<span class="material-icons info-icon"
+                  >info</span
+                ></label
               >
-              <input type="password" required />
+              <input type="password" id="password" required />
             </div>
             <div class="input-field">
-              <button class="btn btn1">Sign Up</button>
+              <button class="btn btn1" type="submit" value="submit">
+                Sign Up
+              </button>
             </div>
             <small
               >By signing up for Codecademy, you agree to Codecademy's
@@ -93,10 +103,10 @@
           </div>
           <a href="#" class="get-to">Browse Courses →</a>
         </section>
-      </section>
-      <section class="div2">
+      </div>
+      <section class="quiz-div">
         <div class="guide">
-          <span class="line1">First steps</span>
+          <h3 class="line1">First steps</h3>
           <span class="line2">Not sure where to begin?</span>
           <span class="line3"
             >No need to worry, our quiz will help you make sense of it
@@ -106,75 +116,157 @@
         </div>
         <img src="img/div2.svg" alt="" />
       </section>
-      <section class="div3">
+      <section class="stories">
         <div class="get-inspired">
           <h2>Get inspired</h2>
           <p>See stories from the Codecademy community.</p>
         </div>
         <div class="cards">
           <div class="dots">
-            <svg aria-hidden="true" class="svg-box"><defs><pattern id="checkerRegular" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#10162f"></rect><rect x="4" y="4" width="1" height="1" fill="#10162f"></rect></pattern></defs><rect x="0" y="0" width="100%" height="100%" fill="url(#checkerRegular)"></rect></svg>
+            <svg aria-hidden="true" class="svg-box">
+              <defs>
+                <pattern
+                  id="checkerRegular"
+                  x="0"
+                  y="0"
+                  width="8"
+                  height="8"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect width="1" height="1" fill="#10162f"></rect>
+                  <rect x="4" y="4" width="1" height="1" fill="#10162f"></rect>
+                </pattern>
+              </defs>
+              <rect
+                x="0"
+                y="0"
+                width="100%"
+                height="100%"
+                fill="url(#checkerRegular)"
+              ></rect>
+            </svg>
           </div>
           <a href="#" class="card">
-            <img src="img/GiacomoSorbi.jpeg" alt="">
+            <img src="img/GiacomoSorbi.jpeg" alt="" />
             <p class="story-title">
-              Taking a different path: One Team Lead's story</p>
-              <p class="learner">Giacomo S., Team Lead, London</p>
+              Taking a different path: One Team Lead's story
+            </p>
+            <p class="learner">Giacomo S., Team Lead, London</p>
           </a>
           <a href="#" class="card">
-            <img src="img/AlisonVoghel.jpg" alt="">
+            <img src="img/AlisonVoghel.jpg" alt="" />
             <p class="story-title">
-              See how this Architect switched to UX Design</p>
-              <p class="learner">Alison V., Senior UX Designer @ Acquia, Columbus</p>
+              See how this Architect switched to UX Design
+            </p>
+            <p class="learner">
+              Alison V., Senior UX Designer @ Acquia, Columbus
+            </p>
           </a>
           <a href="#" class="card">
-            <img src="img/ManuelSousa.jpg" alt="">
-            <p class="story-title">
-              Lessons from a Chef turned Deputy CTO</p>
-              <p class="learner">Manuel S., Deputy CTO @ PaxFamilia, Brussels</p>
+            <img src="img/ManuelSousa.jpg" alt="" />
+            <p class="story-title">Lessons from a Chef turned Deputy CTO</p>
+            <p class="learner">Manuel S., Deputy CTO @ PaxFamilia, Brussels</p>
           </a>
           <a href="#" class="card">
-            <img src="img/Rosita.jpg" alt="">
+            <img src="img/Rosita.jpg" alt="" />
             <p class="story-title">
-              How one Developer learned to code with her disability</p>
-              <p class="learner">Rosita R., Front-End Developer, Brummen</p>
+              How one Developer learned to code with her disability
+            </p>
+            <p class="learner">Rosita R., Front-End Developer, Brummen</p>
           </a>
         </div>
         <a href="#" class="get-to">Explore more stories →</a>
       </section>
-      <section class="div4">
+      <section class="guide-div">
         <div class="how">
           <p class="text1">How it works</p>
-          <p class="text2">First, we invented the best system for learning to code.</p>
-          <p class="text2">Ten years and 50 million learners later, we've perfected it.</p>
+          <p class="text2">
+            First, we invented the best system for learning to code.
+          </p>
+          <p class="text2">
+            Ten years and 50 million learners later, we've perfected it.
+          </p>
         </div>
         <div class="steps">
           <div class="step">
             <h3>Learn by doing</h3>
-            <p>From building websites to analyzing date, the choice is yours. No matter your experience level, you'll be writing real, working code in minutes.</p>
+            <p>
+              From building websites to analyzing date, the choice is yours. No
+              matter your experience level, you'll be writing real, working code
+              in minutes.
+            </p>
           </div>
           <div>
-            <svg aria-hidden="true" class="svg-box-narrow"><defs><pattern id="checkerDensepattern-0" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#66c4ff"></rect><rect x="2" y="2" width="1" height="1" fill="#66c4ff"></rect></pattern></defs><rect x="0" y="0" width="100%" height="100%" fill="url(#checkerDensepattern-0)"></rect></svg>
+            <svg aria-hidden="true" class="svg-box-narrow">
+              <defs>
+                <pattern
+                  id="checkerDensepattern-0"
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect width="1" height="1" fill="#66c4ff"></rect>
+                  <rect x="2" y="2" width="1" height="1" fill="#66c4ff"></rect>
+                </pattern>
+              </defs>
+              <rect
+                x="0"
+                y="0"
+                width="100%"
+                height="100%"
+                fill="url(#checkerDensepattern-0)"
+              ></rect>
+            </svg>
           </div>
           <div class="step">
             <h3>Get instant feedback</h3>
-            <p>Your code is tested as soon as you submit it, so you always know if you're on the right track.</p>
+            <p>
+              Your code is tested as soon as you submit it, so you always know
+              if you're on the right track.
+            </p>
           </div>
           <div>
-            <svg aria-hidden="true" class="svg-box-narrow"><defs><pattern id="checkerDensepattern-0" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#66c4ff"></rect><rect x="2" y="2" width="1" height="1" fill="#66c4ff"></rect></pattern></defs><rect x="0" y="0" width="100%" height="100%" fill="url(#checkerDensepattern-0)"></rect></svg>
+            <svg aria-hidden="true" class="svg-box-narrow">
+              <defs>
+                <pattern
+                  id="checkerDensepattern-1"
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect width="1" height="1" fill="#66c4ff"></rect>
+                  <rect x="2" y="2" width="1" height="1" fill="#66c4ff"></rect>
+                </pattern>
+              </defs>
+              <rect
+                x="0"
+                y="0"
+                width="100%"
+                height="100%"
+                fill="url(#checkerDensepattern-1)"
+              ></rect>
+            </svg>
           </div>
           <div class="step">
             <h3>Put your learning into practice</h3>
-            <p>Apply your learning with real-world projects and learn everything you need to take your career to the next level.</p>
+            <p>
+              Apply your learning with real-world projects and learn everything
+              you need to take your career to the next level.
+            </p>
           </div>
         </div>
       </section>
-      <section class="div5">
+      <section class="get-start">
         <img src="img/div5.svg" alt="" />
         <div class="guide">
-          <span class="line2">It's time to start investing in yourself</span>
+          <h3 class="line2">It's time to start investing in yourself</h3>
           <span class="line3"
-            >Because learning to code might be the easiest way to change your career.</span
+            >Because learning to code might be the easiest way to change your
+            career.</span
           >
           <a href="#" class="btn btn2">Get Started</a>
         </div>
@@ -207,11 +299,13 @@
             <li><a href="#">Projects</a></li>
             <li><a href="#">Articles</a></li>
             <li><a href="#">Blog</a></li>
+          </ul>
         </div>
         <div class="links p7">
           <h2>Support</h2>
           <ul>
             <li><a href="#">Help Center</a></li>
+          </ul>
         </div>
         <div class="links p3">
           <h2>Community</h2>
@@ -220,23 +314,35 @@
             <li><a href="#">Chapters</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Learner Stories</a></li>
+          </ul>
         </div>
         <div class="links p5">
           <h2>Individual Plans</h2>
           <ul>
             <li><a href="#">Pro Membership</a></li>
             <li><a href="#">For Students</a></li>
+          </ul>
         </div>
         <div class="links p6">
           <h2>Enterprise Plans</h2>
           <ul>
             <li><a href="#">For Business</a></li>
+          </ul>
         </div>
         <div class="mobile p4">
           <h2>Mobile</h2>
           <ul>
-            <li><a href="#"><img src="img/download-on-the-app-store.svg" alt=""></a></li>
-            <li><a href="#"><img src="img/120px-Google_Play_Store_badge_EN.svg.png" alt=""></a></li>
+            <li>
+              <a href="#"
+                ><img src="img/download-on-the-app-store.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/120px-Google_Play_Store_badge_EN.svg.png" alt=""
+              /></a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="half2">
@@ -277,7 +383,7 @@
           </ul>
         </div>
       </section>
-      <section class="bottom">
+      <div class="bottom">
         <div class="terms">
           <ul>
             <li><a href="#">Privacy Policy</a></li>
@@ -287,7 +393,7 @@
           </ul>
         </div>
         <p>Made with ❤️ in NYC&copy;Codecademy</p>
-      </section>
+      </div>
     </footer>
     <script>
       $(window).scroll(function () {
